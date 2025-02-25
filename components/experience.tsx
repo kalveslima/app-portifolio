@@ -3,13 +3,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export default function Experience() {
   const experiences = [
     {
-      company: "CI&T",
+      company: "freelancer",
       role: "Front-end Engineer",
-      period: "2021 - Present",
+      period: "2021 - 2023",
       responsibilities: [
-        "Development of large-scale applications using React and TypeScript",
-        "Implementation of responsive and accessible interfaces",
-        "Code review and mentoring of junior developers",
+        "desenvolvimento de aplicações usando react e typeScript entre outras tecnologias",
+        "implementações resposivas com acessibilidade ",
+        "",
       ],
     },
     {
@@ -23,9 +23,9 @@ export default function Experience() {
       ],
     },
     {
-      company: "Avenue Code",
-      role: "Software Engineer",
-      period: "2018 - 2019",
+      company: "",
+      role: "",
+      period: "",
       responsibilities: [
         "Front-end development with JavaScript and React",
         "Integration with REST APIs",
