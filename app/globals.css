@@ -76,3 +76,21 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+:root {
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+
+.font-sans {
+  font-family: var(--font-geist-sans);
+}
+
+.font-mono {
+  font-family: var(--font-geist-mono);
+}
+
+.min-h-screen{
+  background-color: rgb(25, 25, 25);
+  color: rgb(48, 48, 48);
+}

@@ -1,13 +1,13 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Logo from '@/app/logo'
 import Hero from '@/components/hero'
-import About from '@/components/ui/about'
-import Experience from '@/components/experience'
+import About from '@/app/about'
+import Experience from '@/app/experience'
 import Skills from '@/components/skills'
 import Contact from '@/components/contatc'
 import Footer from '@/components/footer'
+import {Menu} from '@/components/menu'
 
 export default function Page() {
   const [showContent, setShowContent] = useState(false)
@@ -23,7 +23,9 @@ export default function Page() {
   return (
     <main className="min-h-screen w-full bg-white">
       <div className="max-w-5xl mx-auto px-4 py-8">
+        <Menu/>
         <Hero />
+       
         {showContent && (
           <div className="space-y-32 animate-fade-in">
             <About />
