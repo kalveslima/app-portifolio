@@ -1,81 +1,34 @@
-"use client"
-
-import { useState, useEffect, useRef } from "react"
-import {MenuItem}from "./menu-item"; 
 
 
-const menuItems = [
-  { label: "Home", href: "/" },
-  {
-    label: "Sobre Mim",
-    href: "/about",
-    submenu: [
-      { label: "Sobre", href: "/about" },
-      { label: "Experiência", href: "/experience" },
-    ],
-  },
-  { label: "Contato", href: "/contact" },
-]
+import { useState } from "react"
+import About from "@/app/about"
+import Experience from "@/app/experience"
+import Contact from "@/components/contatc"
+import Skills from "@/components/skills"
 
-export function Menu() {
-  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null)
-  const menuRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setOpenSubmenu(null)
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
-
-  const toggleSubmenu = (label: string) => {
-    setOpenSubmenu(openSubmenu === label ? null : label)
-  }
+export default function Home() {
+  const [activeComponent, setActiveComponent] = useState<"home" | "about" | "experience" | "contact"| "skills">("home")
 
   return (
-    <nav className="bg-gray-900 text-white shadow-md" ref={menuRef}>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="text-2xl font-bold text-white">Kauan</div>
-
-          {/* Menu Desktop */}
-          <div className="hidden md:flex space-x-6">
-            {menuItems.map((item) => (
-              <MenuItem
-                key={item.label}
-                item={item}
-                isOpen={openSubmenu === item.label}
-                toggleSubmenu={() => toggleSubmenu(item.label)}
-              />
-            ))}
-          </div>
-
-          {/* Menu Mobile */}
-          <div className="md:hidden">
-            <button className="text-gray-300 hover:text-white">☰</button>
-          </div>
-        </div>
-      </div>
+    <div>
+      <nav className="bg-gray-800 text-white">
+        <ul className="flex space-x-5 p-5">
+          <li onClick={() => setActiveComponent("home")}>Home</li>
+          <li onClick={() => setActiveComponent("about")}>Sobre Mim</li>
+          <li onClick={() => setActiveComponent("experience")}>Experiência</li>
+          <li onClick={() => setActiveComponent("contact")}>Contato</li>
+          <li onClick={() => setActiveComponent("skills")}>skills</li>
+        </ul>
+      </nav>
       
-      {/* Submenu Mobile */}
-      <div className="md:hidden">
-        {menuItems.map((item) => (
-          <MenuItem
-            key={item.label}
-            item={item}
-            isOpen={openSubmenu === item.label}
-            toggleSubmenu={() => toggleSubmenu(item.label)}
-            isMobile
-          />
-        ))}
+      <div className="p-5">
+        {activeComponent === "home" && <h1></h1>}
+        {activeComponent === "about" && <About />}
+        {activeComponent === "experience" && <Experience />}
+        {activeComponent === "contact" && <Contact />}
+        {activeComponent === "skills" && <Skills />}
+
       </div>
-    </nav>
+    </div>
   )
 }

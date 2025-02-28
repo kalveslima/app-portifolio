@@ -7,7 +7,7 @@ import Experience from '@/app/experience'
 import Skills from '@/components/skills'
 import Contact from '@/components/contatc'
 import Footer from '@/components/footer'
-import {Menu} from '@/components/menu'
+import Menu from '@/components/menu'
 
 export default function Page() {
   const [showContent, setShowContent] = useState(false)

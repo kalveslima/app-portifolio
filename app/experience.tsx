@@ -27,17 +27,17 @@ export default function Experience() {
       role: "",
       period: "",
       responsibilities: [
-        "Front-end development with JavaScript and React",
-        "Integration with REST APIs",
-        "Performance optimization",
+        " Dev Front-end  com  JavaScript e React",
+        "integraçoēs com REST APIs",
+        "Performance  e otimização",
       ],
     },
   ]
 
   return (
     <section id="experience" className="py-16">
-      <h2 className="text-3xl font-medium mx-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-600">Experiencia</h2>
-      <div className="space-y-8">
+      <h2 className="text-3xl font-medium mx-10 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-60">Experiencia</h2>
+      <div className="space-y-4">
         {experiences.map((exp, index) => (
           <Card key={index}>
             <CardHeader>
