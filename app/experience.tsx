@@ -3,9 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export default function Experience() {
   const experiences = [
     {
-      company: "freelancer",
+      company: "DESENVOLVEDOR-FRONT",
       role: "Front-end Engineer",
-      period: "2021 - 2023",
+      period: "",
       responsibilities: [
         "desenvolvimento de aplicações usando react e typeScript entre outras tecnologias",
         "implementações resposivas com acessibilidade ",
@@ -13,23 +13,29 @@ export default function Experience() {
       ],
     },
     {
-      company: "Thoughtworks",
-      role: "Software Engineer",
-      period: "2019 - 2021",
+      company: "DESENVOLVEDOR-BACK",
+      role: "Back-end Enginner",
+      period: "",
       responsibilities: [
-        "Full-stack development using Node.js and React",
-        "Agile methodologies and test-driven development",
-        "Collaboration with distributed teams",
+        "Desenvolvimento full-stack com foco em Node.js, React",
+    "Adoção de metodologias ágeis, como Scrum e Kanban, para entrega contínua",
+    "Desenvolvimento orientado a testes (TDD) para garantir qualidade e manutenibilidade do código",
+    "Colaboração com equipes distribuídas para implementar soluções escaláveis",
+    "Implementação de APIs eficientes e seguras",
+    "Otimização de desempenho e boas práticas de clean code"
       ],
     },
     {
-      company: "",
-      role: "",
+      company: "CYBER SECURITY",
+      role: "Segurança da Informação",
       period: "",
       responsibilities: [
-        " Dev Front-end  com  JavaScript e React",
-        "integraçoēs com REST APIs",
-        "Performance  e otimização",
+        "Experiência com análise de tráfego de rede e monitoramento de ameaças",
+    "Conhecimento prático em ataques e defesas cibernéticas, incluindo varreduras de portas e exploração de vulnerabilidades",
+    "Desenvolvimento de ferramentas de segurança usando Python para automação de testes",
+    "Implementação de medidas de hardening em servidores e aplicações",
+    "Participação em CTFs e estudos sobre exploração de falhas de segurança",
+    "Familiaridade com frameworks e ferramentas como Nmap, Wireshark e Metasploit"
       ],
     },
   ]

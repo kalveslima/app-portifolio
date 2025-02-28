@@ -7,7 +7,7 @@ export default function About() {
             deselvolvedor de sistemas de analise de dados, sites web, e Cyber-Security
           </p>
           <p>
-            deselvolvedor Fullstack
+            deselvolvedor Fullstack,
             aplicações usando React, TypeScript, entre outras tecnologias.
           </p>
           <p>

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 export default function Skills() {
   const skills = [
     'JavaScript', 'TypeScript', 'React', 'Node.js', 'HTML', 'CSS',
-    'Git', 'AWS', 'Docker', 'REST APIs'
+    'Git', 'AWS', 'Docker', 'REST APIs','Python','Java','Nmap','Wireshark ',' Metasploit'
   ]
 
   return (
