@@ -21,15 +21,15 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-yellow-500 text-gray-600">
+    <div className="min-h-screen bg-green-500 text-gray-600">
       <nav className="bg-gray- shadow-lg">
         <ul className="flex flex-wrap justify-center gap-2 sm:gap-4 p-3 text-sm sm:text-lg max-w-full overflow-x-auto">
           {menuItems.map(({ name, key }) => (
             <li
               key={key}
               onClick={() => setActiveComponent(key)}
-              className={`cursor-pointer px-4 py-2 rounded-md transition-all duration-300 ${
-                activeComponent === key ? "bg-yellow-700" : "hover:bg-yellow-500"
+              className={`cursor-pointer px-4 py-2 rounded-md transition-all duration-200 ${
+                activeComponent === key ? "bg-green-700" : "hover:bg-green-400"
               }`}
             >
               {name}

@@ -4,12 +4,11 @@ export default function Experience() {
   const experiences = [
     {
       company: "ANALISTA DE DADOS",
-      role: "DATA ANALYST",
+      role: "Data Analystc",
      
       responsibilities: [
-        "Criar frameworks versáteis com power bi e analise de dados com ferramentas e linguagem python",
-        "implementações responsivas com acessibilidade ",
-      ],
+       "Criar dashboards versáteis com Power BI e realizar análise de dados utilizando ferramentas e linguagem Python",
+  "Desenvolver implementações responsivas com foco em acessibilidade",]
     },
 
     {
@@ -43,7 +42,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-13">
-      <h2 className="text-3xl font-medium mx-10 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600"> Experiencia </h2>
+      <h2 className="text-3xl font-medium mx-10 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-700"> Experiencia </h2>
       <div className="space-y-4 text-lg text-neutral-600 leading-relaxed">
         {experiences.map((exp, index) => (
           <Card key={index}>

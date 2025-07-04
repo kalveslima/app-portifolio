@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="h-screen flex flex-col items-center justify-center animate-fade-in">
 <h1 className="text-4xl md:text-5xl font-bold tracking-wide text-center font-sans">
 <span className="text-neutral-400">{'['}</span>
-<span className="mx-10 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
+<span className="mx-10 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-600">
 
           kauan lima
         </span>

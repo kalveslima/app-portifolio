@@ -21,7 +21,7 @@ export default function Page() {
   }, [])
 
   return (
-    <main className="min-h-screen w-full bg-white space-y-28">
+    <main className="min-h-screen w-full bg-white space-y-28 bg-yellow-400">
       <div className="max-w-3xl mx-auto px-2 py-2">
         <Menu/>
         <About />
