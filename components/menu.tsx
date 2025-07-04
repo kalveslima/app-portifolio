@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-yellow-500 text-gray-600">
       <nav className="bg-gray- shadow-lg">
-        <ul className="flex justify-center space-x-3 p-3 text-lg">
+        <ul className="flex flex-wrap justify-center gap-2 sm:gap-4 p-3 text-sm sm:text-lg max-w-full overflow-x-auto">
           {menuItems.map(({ name, key }) => (
             <li
               key={key}
