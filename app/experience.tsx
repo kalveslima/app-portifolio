@@ -2,15 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Experience() {
   const experiences = [
-    {
-      company: "ANALISTA DE DADOS",
-      role: "Data Analystc",
-     
-      responsibilities: [
-       "Criar dashboards versáteis com Power BI e realizar análise de dados utilizando ferramentas e linguagem Python",
-  "Desenvolver implementações responsivas com foco em acessibilidade",]
-    },
-
+   
     {
       company: "DESENVOLVEDOR-BACK",
       role: "Back-end Enginner",
