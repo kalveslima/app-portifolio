@@ -35,7 +35,7 @@ export default function Experience() {
   return (
     <section id="experience" className="py-13">
       <h2 className="text-3xl font-medium mx-10 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-700"> Experiencia </h2>
-      <div className="space-y-4 text-lg text-neutral-600 leading-relaxed">
+      <div className="space-y-4 text-lg text-neutral-600 leading-relaxed sm: gap-8 p-6">
         {experiences.map((exp, index) => (
           <Card key={index}>
             <CardHeader>

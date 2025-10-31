@@ -8,7 +8,7 @@ import Skills from '@/components/skills'
 import Contact from '@/components/contatc'
 import Footer from '@/components/footer'
 import Menu from '@/components/menu'
-
+import Hero from '@/components/hero'
 export default function Page() {
   const [showContent, setShowContent] = useState(false)
 
@@ -21,9 +21,9 @@ export default function Page() {
   }, [])
 
   return (
-    <main className="min-h-screen w-full bg-white space-y-28 bg-yellow-400">
+    <main className="min-h-screen w-full bg-white space-y-20 bg-yellow-400">
       <div className="max-w-3xl mx-auto px-2 py-2">
-        <Menu/>
+      <Hero/>
         <About />
        
         {showContent && (
