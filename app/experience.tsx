@@ -17,19 +17,7 @@ export default function Experience() {
       ],
     },
 
-    {
-      company: "CYBER SECURITY",
-      role: "Segurança da Informação",
-
-      responsibilities: [
-        "Experiência com análise de tráfego de rede e monitoramento de ameaças",
-    "Conhecimento prático em ataques e defesas cibernéticas, incluindo varreduras de portas e exploração de vulnerabilidades",
-    "Desenvolvimento de ferramentas de segurança usando Python para automação de testes",
-    "Implementação de medidas de hardening em servidores e aplicações",
-    "Participação em CTFs e estudos sobre exploração de falhas de segurança",
-    "Familiaridade com frameworks e ferramentas como Nmap, Wireshark e Metasploit"
-      ],
-    },
+    
   ]
 
   return (
