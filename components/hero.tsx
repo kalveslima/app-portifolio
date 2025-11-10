@@ -7,7 +7,7 @@ export default function Hero() {
         <span className="text-neutral-400">{'['}</span>
 
         <span className="mx-4 md:mx-10 text-transparent bg-clip-text bg-gradient-to-r  bg-green-900">
-         Gustavo peres <strong className='bg-blue'> deselvolvedor</strong>
+         Kauan Alves <strong className='bg-blue'> deselvolvedor</strong>
         </span>
         <span className="text-neutral-400">{']'}</span>
       </h1>
